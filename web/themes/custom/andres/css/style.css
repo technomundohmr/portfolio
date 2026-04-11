@@ -1,0 +1,88 @@
+.main-nav-container {
+    width: 100%;
+    background: var(--background-secondary);
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.main-menu ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.site-branding a{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.7rem;
+    color: var(--neon-green-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 700;
+}
+
+#block-andres-primary-local-tasks:hover {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+#block-andres-primary-local-tasks {
+    position: relative;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+#block-andres-primary-local-tasks ul {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+#block-andres-primary-local-tasks li {
+    padding: 5px 20px;
+    background: var(--neon-blue-secondary);
+    color: var(--neon-blue-primary);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#block-andres-primary-local-tasks li a {
+    color: var(--neon-blue-dark);
+    text-decoration: none;
+}
+
+.blue-primary-text {
+    color: var(--neon-blue-primary);
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 6px 12px;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+    font-family: JetBrains Mono, monospace;
+}
+
+.tag-blue {
+    color: var(--neon-blue-primary);
+}
+
+.tag-green {
+    color: var(--neon-green-primary);
+}
+
+.tag-violet {
+    color: var(--neon-violet-primary);
+}

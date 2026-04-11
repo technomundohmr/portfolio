@@ -1,0 +1,78 @@
+# Ignore SO files
+.DS_Store
+.idea
+
+# Ignore contributed code.
+/vendor
+/web/core
+/web/core_changed
+/web/sites/*/settings.*.php
+/web/sites/*/services*.yml
+/web/sites/*/files
+/web/sites/*/private
+/web/sites/simpletest
+
+# Directories specific to this template
+/web/libraries
+/web/modules/contrib
+/web/profiles/contrib
+/web/themes/contrib
+
+# Ignore dev files
+node_modules
+web/themes/**/build
+web/themes/**/yarn-error.log
+web/sites/sites.local.php
+
+# Ignore scaffolded files.
+web/.csslintrc
+web/.eslintignore
+web/.eslintrc.json
+web/.ht.router.php
+web/.htaccess
+web/autoload.php
+web/example.gitignore
+web/index.php
+web/INSTALL.txt
+web/README.md
+web/robots.txt
+web/update.php
+web/web.config
+/.editorconfig
+/.gitattributes
+
+
+# Ignore logs.
+logs
+!logs/.gitkeep
+
+# Backups
+*.gz
+*.sql
+*.sql.gz:*
+backups/*.gz
+backups/*.sql
+backups/*.sql.gz:*
+
+# env-file
+/.env.dev
+
+# ddev
+.ddev-custom
+
+# Compile CSS
+web/themes/custom/uniandes_ds/dist/*.js.map
+web/themes/custom/uniandes_ds/dist/*.css.map
+web/themes/custom/uniandes_ds/dist/*/*.js.map
+web/themes/custom/uniandes_ds/dist/*/*.css.map
+web/themes/custom/uniandes_ds/dist/*/*/*.css.map
+web/themes/custom/uniandes_ds/dist/*/*/*.js.map
+web/themes/custom/uniandes_ds/dist/*/*/*/*.js.map
+web/themes/custom/uniandes_ds/dist/*/*/*/*.css.map
+web/themes/custom/uniandes_ds/dist/*/*/*/*/*.js.map
+web/themes/custom/uniandes_ds/dist/*/*/*/*/*.css.map
+auth_keys/private.key
+auth_keys/public.key
+
+# Ignore script reports
+scripts/reports/

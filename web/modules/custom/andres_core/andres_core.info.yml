@@ -1,0 +1,5 @@
+name: 'Andrés Core'
+type: module
+description: 'Funcionalidad central y lógica personalizada para mi sitio.'
+package: Andres
+core_version_requirement: ^11

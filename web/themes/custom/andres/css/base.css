@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--text-main);
+    background: var(--background-main);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--neon-blue-primary);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    font-weight: 700;
+}
+
+a.button {
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+a.button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+a.button.button-small {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+}
+
+a.button.button-medium {
+    padding: 1rem 1.25rem;
+    font-size: 1.25rem;
+}
+
+a.button.button-large {
+    padding: 1.5rem 2rem;
+    font-size: 1.25rem;
+}
+
+a.button.button-primary-blue {
+    background: var(--neon-blue-primary);
+    color: white;
+}
+
+a.button.button-secondary-blue {
+    background: var(--neon-blue-primary);
+    color: var(--neon-blue-secondary);
+    font-weight: 700;
+}
+
+a.button.button-outline-blue {
+    border: 1px solid var(--neon-blue-primary);
+    color: var(--neon-blue-primary);
+}
+
+a.button.button-primary-green {
+    background: var(--neon-green-primary);
+    color: white;
+}
+
+a.button.button-secondary-green {
+    background: var(--neon-green-primary);
+    color: var(--neon-green-secondary);
+    font-weight: 700;
+}
+
+a.button.button-outline-green {
+    border: 1px solid var(--neon-green-primary);
+    color: var(--neon-green-primary);
+}
+
+a.button.button-primary-violet {
+    background: var(--neon-violet-primary);
+    color: white;
+}
+
+a.button.button-secondary-violet {
+    background: var(--neon-violet-primary);
+    color: var(--neon-violet-secondary);
+    font-weight: 700;
+}
+
+a.button.button-outline-violet {
+    border: 1px solid var(--neon-violet-primary);
+    color: var(--neon-violet-primary);
+}
