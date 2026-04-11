@@ -1,0 +1,22 @@
+uuid: 41ad6cb6-d49a-4f69-bd0d-7f7abcd9909b
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - andres
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: andres_help
+theme: andres
+region: header
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

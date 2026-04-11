@@ -1,0 +1,27 @@
+uuid: a4791144-58be-4c94-a2de-27e5d7db36f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_background
+field_name: field_background
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: background_primary
+      label: background-primary
+    -
+      value: background_secondary
+      label: background-secondary
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

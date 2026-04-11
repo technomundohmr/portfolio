@@ -1,0 +1,22 @@
+uuid: ad40098e-b6fc-4f8e-9f1f-4aea476e0b7a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - andres
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: andres_primary_local_tasks
+theme: andres
+region: breadcrumb
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

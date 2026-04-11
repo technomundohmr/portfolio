@@ -1,0 +1,18 @@
+uuid: 72b3fc53-0d1e-4a01-a30d-f9f9c3162aac
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: section
+label: Section
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      layout_onecol: 'One column'
+      layout_twocol: 'Two column'
+      layout_threecol_25_50_25: 'Three column 25/50/25'

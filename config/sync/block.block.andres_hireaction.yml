@@ -1,0 +1,23 @@
+uuid: 329c2958-5175-4992-b54b-d592714853c7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:call_to_action:cb466653-794f-4716-b547-b7e7d4911fb1'
+  module:
+    - block_content
+  theme:
+    - andres
+id: andres_hireaction
+theme: andres
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'block_content:cb466653-794f-4716-b547-b7e7d4911fb1'
+settings:
+  id: 'block_content:cb466653-794f-4716-b547-b7e7d4911fb1'
+  label: 'Hire action'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

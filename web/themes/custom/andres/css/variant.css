@@ -3,6 +3,8 @@
     --background-secondary: #131313;
     --text-main: #BAC9CC;
     --text-secondary: #E5E2E1;
+    --text-white-primary: #BAC9CC;
+    --text-white-secondary: #E5E2E1;
     --neon-blue-primary: #00D4EC;
     --neon-blue-secondary: #81ECFF;
     --neon-blue-dark: #005762;
@@ -10,6 +12,8 @@
     --neon-green-secondary: #02E600;
     --neon-violet-primary: #FE00FE;
     --neon-violet-secondary: #3d033d;
+    --text-dark-main: #1C1B1B;
+    --text-dark-secondary: #424656;
 }
 
 .light-theme {

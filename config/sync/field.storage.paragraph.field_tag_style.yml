@@ -1,0 +1,33 @@
+uuid: 6824bde8-a562-4517-b102-16d58c6c001d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_tag_style
+field_name: field_tag_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: blue
+      label: blue
+    -
+      value: green
+      label: green
+    -
+      value: violet
+      label: violet
+    -
+      value: white
+      label: white
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

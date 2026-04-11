@@ -57,7 +57,7 @@
 {% set main_cta_label = '' %}
 {% set secondary_cta = '' %}
 {% set secondary_cta_label = '' %}
-{% set image_src = '' %}
+{% set image_background_src = '' %}
 {% set type = '' %}
 {% set gradient_from = '' %}
 {% set gradient_to = '' %}
@@ -95,6 +95,10 @@
   {% set image_src = file_url(paragraph.field_image.entity.field_media_image.entity.uri.value) %}
 {% endif %}
 
+{% if paragraph.field_background_image.entity.field_media_image %}
+  {% set image_background_src = file_url(paragraph.field_background_image.entity.field_media_image.entity.uri.value) %}
+{% endif %}
+
 {% if paragraph.field_backgound_type.value %}
   {% set type = paragraph.field_backgound_type.value %}
 {% endif %}
@@ -107,20 +111,35 @@
   {% set gradient_to = paragraph.field_gradient_color_back_to.value  %}
 {% endif %}
 
-{#
-  {% if type == "gradient_color" %}
+{% if paragraph.field_full_background_color.value %}
+  {% set background_color = paragraph.field_full_background_color.value  %}
+{% endif %}
+
+{% if type == "gradient_color" %}
+  <style>
+    .hero {
+      background-image: radial-gradient(circle at 40% 50%, {{ gradient_from }} 0%, {{ gradient_to }} 40%);
+    }
+  </style>
+{% elseif type == "full_color" %}
     <style>
-      .hero {
-        background-image: radial-gradient(circle at 40% 50%, {{ gradient_from }} 0%, {{ gradient_to }} 40%);
-      }
-    </style>
-  {% endif %}
-#}
+    .hero {
+      background-color: {{ background_color }};
+    }
+  </style>
+{% elseif type == "image" %}
+  <style>
+    .hero {
+      background-image: url({{ image_background_src }});
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+{% endif %}
 
 {% block paragraph %}
 	<div{{attributes.addClass(classes)}}>
 		{% block content %}
-			<div{{attributes.addClass(classes)}}>
 				<section class="hero">
 					<div class="hero-container">
 						<div class="hero-content">

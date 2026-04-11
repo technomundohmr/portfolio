@@ -1,0 +1,23 @@
+uuid: f5e3ae00-034b-4863-ac1a-30c102a8d8d4
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - andres
+_core:
+  default_config_hash: pbbed0hdqGDF-_QWVVTWRAwgDIotFuAvWH5mWUZu0fA
+id: andres_search_form_wide
+theme: andres
+region: header
+weight: -3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

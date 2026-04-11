@@ -1,0 +1,30 @@
+uuid: cfba38f4-e49b-4fab-92c5-e6efaa49c497
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_size
+field_name: field_size
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: large
+      label: large
+    -
+      value: medium
+      label: medium
+    -
+      value: small
+      label: small
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

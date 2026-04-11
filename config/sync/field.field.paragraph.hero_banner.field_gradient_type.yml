@@ -1,0 +1,21 @@
+uuid: db25730c-2913-4d89-b938-94c820e83d20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gradient_type
+    - paragraphs.paragraphs_type.hero_banner
+  module:
+    - options
+id: paragraph.hero_banner.field_gradient_type
+field_name: field_gradient_type
+entity_type: paragraph
+bundle: hero_banner
+label: 'gradient type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

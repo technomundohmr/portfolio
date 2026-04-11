@@ -1,0 +1,30 @@
+uuid: 42a3d0f2-2c0c-4f20-871f-a4b3ca9dea64
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_backgound_type
+field_name: field_backgound_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: full_color
+      label: full_color
+    -
+      value: gradient_color
+      label: gradient_color
+    -
+      value: image
+      label: image
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

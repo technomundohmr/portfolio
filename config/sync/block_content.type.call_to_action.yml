@@ -1,0 +1,8 @@
+uuid: 4e03a0f3-6307-4ee6-ae90-00883b2a7a10
+langcode: en
+status: true
+dependencies: {  }
+id: call_to_action
+label: 'Call to action'
+revision: false
+description: 'Botones de acción con enlaces'

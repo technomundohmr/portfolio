@@ -1,0 +1,11 @@
+uuid: 796d8eec-a0b1-4088-ba3f-fecc4450d8e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - mercury_editor_templates
+id: me_template.token
+label: Token
+description: null
+targetEntityType: me_template
+cache: true

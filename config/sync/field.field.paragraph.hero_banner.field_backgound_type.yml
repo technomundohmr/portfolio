@@ -1,0 +1,21 @@
+uuid: 91d63edf-b20f-4e5e-a64b-61f10bd11f92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_backgound_type
+    - paragraphs.paragraphs_type.hero_banner
+  module:
+    - options
+id: paragraph.hero_banner.field_backgound_type
+field_name: field_backgound_type
+entity_type: paragraph
+bundle: hero_banner
+label: 'Backgound type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

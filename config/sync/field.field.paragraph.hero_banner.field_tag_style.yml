@@ -1,0 +1,21 @@
+uuid: a2ce875b-db9c-418e-9baa-2ba229e9ba62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tag_style
+    - paragraphs.paragraphs_type.hero_banner
+  module:
+    - options
+id: paragraph.hero_banner.field_tag_style
+field_name: field_tag_style
+entity_type: paragraph
+bundle: hero_banner
+label: 'Tag style'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

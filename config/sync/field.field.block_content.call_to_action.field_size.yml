@@ -1,0 +1,23 @@
+uuid: a4e62394-ba8c-43f7-9889-5fed169838c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.call_to_action
+    - field.storage.block_content.field_size
+  module:
+    - options
+id: block_content.call_to_action.field_size
+field_name: field_size
+entity_type: block_content
+bundle: call_to_action
+label: Tamaño
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: medium
+default_value_callback: ''
+settings: {  }
+field_type: list_string

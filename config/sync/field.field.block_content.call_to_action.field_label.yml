@@ -1,0 +1,19 @@
+uuid: abf2f2bd-867e-4996-87fd-a3eee5efc56b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.call_to_action
+    - field.storage.block_content.field_label
+id: block_content.call_to_action.field_label
+field_name: field_label
+entity_type: block_content
+bundle: call_to_action
+label: label
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

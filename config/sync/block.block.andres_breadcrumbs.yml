@@ -1,0 +1,26 @@
+uuid: 11abfe87-ad4c-4128-b9cb-f5fa81715908
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - andres
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: andres_breadcrumbs
+theme: andres
+region: breadcrumb
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'
