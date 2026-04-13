@@ -5,18 +5,10 @@ dependencies:
   config:
     - field.field.paragraph.section.field_background
     - paragraphs.paragraphs_type.section
-  module:
-    - options
 id: paragraph.section.default
 targetEntityType: paragraph
 bundle: section
 mode: default
-content:
-  field_background:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-hidden: {  }
+content: {  }
+hidden:
+  field_background: true

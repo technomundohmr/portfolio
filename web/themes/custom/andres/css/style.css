@@ -157,3 +157,15 @@ a.button.button-outline-violet {
     border: 1px solid var(--neon-violet-primary);
     color: var(--neon-violet-primary);
 }
+
+.background-primary {
+    background: var(--background-main);
+}
+
+.background-secondary {
+    background: var(--background-secondary);
+}
+
+.section {
+    padding: 40px 10%;
+}

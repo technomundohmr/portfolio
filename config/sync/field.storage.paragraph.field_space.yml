@@ -1,0 +1,45 @@
+uuid: ee24d5c0-c4b7-433a-90c0-3d9cb15f1495
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_space
+field_name: field_space
+entity_type: paragraph
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 12
+      label: '12'
+    -
+      value: 24
+      label: '24'
+    -
+      value: 36
+      label: '36'
+    -
+      value: 48
+      label: '48'
+    -
+      value: 56
+      label: '56'
+    -
+      value: 64
+      label: '64'
+    -
+      value: 86
+      label: '86'
+    -
+      value: 128
+      label: '128'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.page.field_content
     - node.type.page
   module:
-    - entity_reference_revisions
+    - layout_paragraphs
     - text
     - user
 _core:
@@ -25,7 +25,7 @@ content:
     weight: 100
     region: content
   field_content:
-    type: entity_reference_revisions_entity_view
+    type: layout_paragraphs
     label: hidden
     settings:
       view_mode: default
