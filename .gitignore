@@ -1,7 +1,3 @@
-# Ignore SO files
-.DS_Store
-.idea
-
 # Ignore contributed code.
 /vendor
 /web/core
@@ -59,20 +55,6 @@ backups/*.sql.gz:*
 
 # ddev
 .ddev-custom
-
-# Compile CSS
-web/themes/custom/uniandes_ds/dist/*.js.map
-web/themes/custom/uniandes_ds/dist/*.css.map
-web/themes/custom/uniandes_ds/dist/*/*.js.map
-web/themes/custom/uniandes_ds/dist/*/*.css.map
-web/themes/custom/uniandes_ds/dist/*/*/*.css.map
-web/themes/custom/uniandes_ds/dist/*/*/*.js.map
-web/themes/custom/uniandes_ds/dist/*/*/*/*.js.map
-web/themes/custom/uniandes_ds/dist/*/*/*/*.css.map
-web/themes/custom/uniandes_ds/dist/*/*/*/*/*.js.map
-web/themes/custom/uniandes_ds/dist/*/*/*/*/*.css.map
-auth_keys/private.key
-auth_keys/public.key
 
 # Ignore script reports
 scripts/reports/

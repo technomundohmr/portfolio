@@ -1,0 +1,46 @@
+uuid: 385662f2-4af5-40d3-b68e-3c8d8f205166
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_feature_card
+    - paragraphs.paragraphs_type.feature_grid
+    - paragraphs.paragraphs_type.feature_grid_card
+  module:
+    - entity_reference_revisions
+id: paragraph.feature_grid.field_feature_card
+field_name: field_feature_card
+entity_type: paragraph
+bundle: feature_grid
+label: 'Feature card'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      feature_grid_card: feature_grid_card
+    negate: 0
+    target_bundles_drag_drop:
+      feature_grid:
+        weight: 7
+        enabled: false
+      feature_grid_card:
+        weight: 8
+        enabled: true
+      hero_banner:
+        weight: 9
+        enabled: false
+      section:
+        weight: 10
+        enabled: false
+      section_header:
+        weight: 11
+        enabled: false
+      spacer:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

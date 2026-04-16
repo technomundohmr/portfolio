@@ -1,0 +1,21 @@
+uuid: e74256b2-bb25-473a-b28e-6a632b91e06f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_divider
+    - paragraphs.paragraphs_type.section_header
+id: paragraph.section_header.field_divider
+field_name: field_divider
+entity_type: paragraph
+bundle: section_header
+label: Divider
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Use divider'
+  off_label: "Don't use divider"
+field_type: boolean

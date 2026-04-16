@@ -169,3 +169,26 @@ a.button.button-outline-violet {
 .section {
     padding: 40px 10%;
 }
+
+.section-header{
+    width: fit-content;
+}
+
+.section-header .section-header__divider {
+    width: 30%;
+    height: 5px;
+    margin-top: 16px;
+    border-radius: 2px;
+}
+
+.section-header__divider.divider-blue {
+    background: var(--neon-blue-primary);
+}
+
+.section-header__divider.divider-green {
+    background: var(--neon-green-primary);
+}
+
+.section-header__divider.divider-violet {
+    background: var(--neon-violet-primary);
+}

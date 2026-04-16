@@ -1,0 +1,10 @@
+uuid: 7234e93b-6ef3-4c8c-81d0-fde060c5315d
+langcode: en
+status: true
+dependencies: {  }
+id: feature_grid
+label: 'Feature grid'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

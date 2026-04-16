@@ -1,0 +1,48 @@
+uuid: 87c3163f-8338-437f-9640-a6edcecdaab2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.feature_grid_card.field_feature
+    - field.field.paragraph.feature_grid_card.field_icon_id
+    - field.field.paragraph.feature_grid_card.field_theme
+    - field.field.paragraph.feature_grid_card.field_title
+    - paragraphs.paragraphs_type.feature_grid_card
+id: paragraph.feature_grid_card.default
+targetEntityType: paragraph
+bundle: feature_grid_card
+mode: default
+content:
+  field_feature:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon_id:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_theme:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

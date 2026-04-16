@@ -38,23 +38,36 @@
  * @ingroup themeable
  */
 #}
+{{ attach_library('andres/feature-grid') }}
+{{ attach_library('andres/feature-card') }}
 {%
   set classes = [
+    'feature-grid-container',
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
-{% set space = '14' %}
-
-{% if paragraph.field_space.value %}
-  {% set space = paragraph.field_space.value %}
-{% endif %}
-
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
-      <div style="height: {{ space }}px;">
-      </div>
+      {% for card in paragraph.field_feature_card %}
+      <div class="feature-card feature-card--{{ card.entity.field_theme.value }}">
+        <div class="feature-card__icon-wrapper">
+          <div class="feature-card__icon">
+            <span class="material-symbols-outlined">
+              {{ card.entity.field_icon_id.value }}
+            </span>
+          </div>
+        </div>
+        <h3 class="feature-card__title">Core Backend</h3>
+
+        <ul class="feature-card__list">
+          <li class="feature-card__list-item">PHP 8.3 / Drupal 10</li>
+          <li class="feature-card__list-item">Laravel Ecosystem</li>
+          <li class="feature-card__list-item">MySQL / PostgreSQL / Redis</li>
+        </ul>
+      </div>  
+      {% endfor %}
   </div>
 {% endblock paragraph %}

@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.page
+    - paragraphs.paragraphs_type.feature_grid
     - paragraphs.paragraphs_type.hero_banner
     - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.section_header
     - paragraphs.paragraphs_type.spacer
   module:
     - entity_reference_revisions
@@ -27,13 +29,24 @@ settings:
       section: section
       hero_banner: hero_banner
       spacer: spacer
+      feature_grid: feature_grid
+      section_header: section_header
     negate: 0
     target_bundles_drag_drop:
+      feature_grid:
+        weight: 7
+        enabled: true
+      feature_grid_card:
+        weight: 8
+        enabled: false
       hero_banner:
         weight: 3
         enabled: true
       section:
         weight: 2
+        enabled: true
+      section_header:
+        weight: 7
         enabled: true
       spacer:
         weight: 6

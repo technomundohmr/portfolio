@@ -40,21 +40,33 @@
 #}
 {%
   set classes = [
+    'section-header',
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
-{% set space = '14' %}
 
-{% if paragraph.field_space.value %}
-  {% set space = paragraph.field_space.value %}
+{% set divider_style = 'blue' %}
+{% set subtitle = '' %}
+{% set use_divider = paragraph.field_divider.value %}
+
+{% if paragraph.field_subtitle.value %}
+  {% set subtitle = paragraph.field_subtitle.value %}
+{% endif %}
+{% if paragraph.field_divider_stile.value %}
+  {% set divider_style = paragraph.field_divider_stile.value %}
 {% endif %}
 
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
-      <div style="height: {{ space }}px;">
-      </div>
+    <h{{ paragraph.field_hierarchy.value }}>{{ paragraph.field_main_header.value }}</h{{ paragraph.field_hierarchy.value }}>
+    {% if subtitle %}
+      <h5>{{ paragraph.field_subtitle.value }}</h5>
+    {% endif %}
+    {% if use_divider %}
+      <div class="section-header__divider divider-{{divider_style}}"></div>
+    {% endif %}
   </div>
 {% endblock paragraph %}

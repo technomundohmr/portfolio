@@ -1,0 +1,19 @@
+uuid: da6f0bc2-b57b-40e4-b7ed-27e8d15ec1a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_feature
+    - paragraphs.paragraphs_type.feature_grid_card
+id: paragraph.feature_grid_card.field_feature
+field_name: field_feature
+entity_type: paragraph
+bundle: feature_grid_card
+label: Feature
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

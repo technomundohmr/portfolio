@@ -1,0 +1,21 @@
+uuid: 85de5c74-ac25-488b-8a32-5a5f64ffa6e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_divider_stile
+    - paragraphs.paragraphs_type.section_header
+  module:
+    - options
+id: paragraph.section_header.field_divider_stile
+field_name: field_divider_stile
+entity_type: paragraph
+bundle: section_header
+label: 'Divider stile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

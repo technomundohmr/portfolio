@@ -1,0 +1,21 @@
+uuid: 161bccbe-997b-40b6-b91c-71d2a224c0cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hierarchy
+    - paragraphs.paragraphs_type.section_header
+  module:
+    - options
+id: paragraph.section_header.field_hierarchy
+field_name: field_hierarchy
+entity_type: paragraph
+bundle: section_header
+label: 'Main header hierarchy'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

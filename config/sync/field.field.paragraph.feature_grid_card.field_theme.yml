@@ -1,0 +1,21 @@
+uuid: 413c4d3d-99e0-457d-b0b7-8fd23d9a6dad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_theme
+    - paragraphs.paragraphs_type.feature_grid_card
+  module:
+    - options
+id: paragraph.feature_grid_card.field_theme
+field_name: field_theme
+entity_type: paragraph
+bundle: feature_grid_card
+label: Theme
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

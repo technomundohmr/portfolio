@@ -1,0 +1,65 @@
+uuid: 9ce39687-db54-471a-b847-510279535957
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_header.field_divider
+    - field.field.paragraph.section_header.field_divider_stile
+    - field.field.paragraph.section_header.field_hierarchy
+    - field.field.paragraph.section_header.field_main_header
+    - field.field.paragraph.section_header.field_pretitle
+    - field.field.paragraph.section_header.field_subtitle
+    - paragraphs.paragraphs_type.section_header
+  module:
+    - text
+id: paragraph.section_header.default
+targetEntityType: paragraph
+bundle: section_header
+mode: default
+content:
+  field_divider:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_divider_stile:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_hierarchy:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_main_header:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pretitle:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_subtitle:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,30 @@
+uuid: 3f266ae0-52fc-480f-9775-c15501a59d3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_divider_stile
+field_name: field_divider_stile
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: blue
+      label: blue
+    -
+      value: green
+      label: green
+    -
+      value: purple
+      label: purple
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
