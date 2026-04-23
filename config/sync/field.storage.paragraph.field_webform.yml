@@ -1,20 +1,19 @@
-uuid: d20f14ad-456f-4b29-be17-dd3522d9dd59
+uuid: 64157b58-ca55-4574-a974-c3e0eefeee8d
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_tag
-field_name: field_tag
+    - webform
+id: paragraph.field_webform
+field_name: field_webform
 entity_type: paragraph
-type: string
+type: webform
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
-module: core
+  target_type: webform
+module: webform
 locked: false
-cardinality: 5
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

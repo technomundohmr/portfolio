@@ -1,0 +1,21 @@
+uuid: 184405f3-a56d-44a2-98a8-89afc3dc06fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reverse
+    - paragraphs.paragraphs_type.full_horizontal_card
+id: paragraph.full_horizontal_card.field_reverse
+field_name: field_reverse
+entity_type: paragraph
+bundle: full_horizontal_card
+label: Reverse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

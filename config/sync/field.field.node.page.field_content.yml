@@ -6,10 +6,12 @@ dependencies:
     - field.storage.node.field_content
     - node.type.page
     - paragraphs.paragraphs_type.feature_grid
+    - paragraphs.paragraphs_type.full_horizontal_card
     - paragraphs.paragraphs_type.hero_banner
     - paragraphs.paragraphs_type.section
     - paragraphs.paragraphs_type.section_header
     - paragraphs.paragraphs_type.spacer
+    - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
 id: node.page.field_content
@@ -31,6 +33,8 @@ settings:
       spacer: spacer
       feature_grid: feature_grid
       section_header: section_header
+      full_horizontal_card: full_horizontal_card
+      webform: webform
     negate: 0
     target_bundles_drag_drop:
       feature_grid:
@@ -39,6 +43,9 @@ settings:
       feature_grid_card:
         weight: 8
         enabled: false
+      full_horizontal_card:
+        weight: 10
+        enabled: true
       hero_banner:
         weight: 3
         enabled: true
@@ -50,5 +57,8 @@ settings:
         enabled: true
       spacer:
         weight: 6
+        enabled: true
+      webform:
+        weight: 16
         enabled: true
 field_type: entity_reference_revisions

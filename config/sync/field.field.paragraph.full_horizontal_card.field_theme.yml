@@ -1,0 +1,21 @@
+uuid: 6bee9296-45b5-45e0-906e-5fbd174d0dc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_theme
+    - paragraphs.paragraphs_type.full_horizontal_card
+  module:
+    - options
+id: paragraph.full_horizontal_card.field_theme
+field_name: field_theme
+entity_type: paragraph
+bundle: full_horizontal_card
+label: Theme
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

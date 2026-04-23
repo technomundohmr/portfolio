@@ -64,6 +64,12 @@ settings:
         -
           label: 'Primary blue'
           element: '<span class="blue-primary-text">'
+        -
+          label: 'Primary green'
+          element: '<span class="green-primary-text">'
+        -
+          label: 'Primary violet'
+          element: '<span class="violet-primary-text">'
 image_upload:
   status: true
   scheme: public

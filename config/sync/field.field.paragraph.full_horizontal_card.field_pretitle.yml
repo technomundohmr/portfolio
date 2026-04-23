@@ -1,0 +1,19 @@
+uuid: aa343850-359b-4b87-8a33-ac6c8b21c879
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pretitle
+    - paragraphs.paragraphs_type.full_horizontal_card
+id: paragraph.full_horizontal_card.field_pretitle
+field_name: field_pretitle
+entity_type: paragraph
+bundle: full_horizontal_card
+label: Pretitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

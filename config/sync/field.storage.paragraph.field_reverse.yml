@@ -1,20 +1,17 @@
-uuid: d20f14ad-456f-4b29-be17-dd3522d9dd59
+uuid: fe703c63-025a-48fb-bbc2-41355073fc4d
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_tag
-field_name: field_tag
+id: paragraph.field_reverse
+field_name: field_reverse
 entity_type: paragraph
-type: string
-settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+type: boolean
+settings: {  }
 module: core
 locked: false
-cardinality: 5
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,0 +1,92 @@
+/* Contenedor Principal con prefijo */
+.full-horizontal-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-main);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.full-horizontal-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.full-horizontal-card .full-horizontal-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.full-horizontal-card-card-img-wrapper {
+    flex: 2;
+}
+
+.full-horizontal-card .full-horizontal-card-content {
+    padding: 40px;
+    flex: 3;
+}
+
+.full-horizontal-card .full-horizontal-card-category {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.full-horizontal-card .full-horizontal-card-title {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.full-horizontal-card .full-horizontal-card-description {
+    color: #a0a0a0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Tags */
+.full-horizontal-card .full-horizontal-card-tags {
+    display: flex;
+    gap: 10px;
+}
+
+.full-horizontal-card .full-horizontal-card-tag {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #262626;
+    color: #888;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.full-horizontal-card .full-horizontal-card-tag-primary {
+    background-color: rgba(34, 211, 238, 0.1);
+    border-color: rgba(34, 211, 238, 0.2);
+    color: #22d3ee;
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+    .full-horizontal-card {
+        flex-direction: row;
+    }
+
+    .full-horizontal-card .full-horizontal-card-visual {
+        width: 35%;
+    }
+
+    .full-horizontal-card .full-horizontal-card-content {
+        width: 65%;
+        padding: 50px;
+    }
+}

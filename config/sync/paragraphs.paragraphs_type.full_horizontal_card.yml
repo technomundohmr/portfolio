@@ -1,0 +1,10 @@
+uuid: 2cb3ce30-0c99-4709-872d-2fc18fe17f55
+langcode: en
+status: true
+dependencies: {  }
+id: full_horizontal_card
+label: 'Full horizontal card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

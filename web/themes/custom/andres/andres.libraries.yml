@@ -29,3 +29,13 @@ feature-card:
   css:
     theme:
       css/feature-card.css: {}
+
+full-horizontal-card:
+  css:
+    theme:
+      css/full-horizontal-card.css: {}
+
+webform:
+  css:
+    theme:
+      css/webform.css: {}

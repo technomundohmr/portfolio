@@ -1,0 +1,29 @@
+.webfor-container {
+    background-color: var(--background-secondary);
+    padding: 35px;
+    width: 80%;
+    margin: auto;
+}
+
+.webfor-container div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.webfor-container input[type="submit"]{
+    border: none;
+}
+
+.webfor-container input[type="submit"]:hover{
+    transform: unset;
+}
+
+.webfor-container input[type="text"], .webfor-container input[type="email"], .webfor-container textarea {
+    background-color: var(--text-dark-secondary);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    color: var(--text-main);
+}
