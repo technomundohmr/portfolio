@@ -39,3 +39,8 @@ webform:
   css:
     theme:
       css/webform.css: {}
+
+link-list:
+  css:
+    theme:
+      css/link-list.css: {}

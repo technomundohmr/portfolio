@@ -38,11 +38,10 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library('andres/feature-grid') }}
-{{ attach_library('andres/feature-card') }}
+{{ attach_library('andres/link-list') }}
 {%
   set classes = [
-    'feature-grid-container',
+    'link-list-container',
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
@@ -50,24 +49,32 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-      {% for card in paragraph.field_feature_card %}
-      <div class="feature-card rounded-icon-{{ card.entity.field_theme.value }}">
-        <div class="rounded_icon-wrapper">
-          <div class="rounded_icon">
-            <span class="material-symbols-outlined">
-              {{ card.entity.field_icon_id.value }}
-            </span>
-          </div>
-        </div>
-        <h3 class="feature-card__title">Core Backend</h3>
-
-        <ul class="feature-card__list">
-          <li class="feature-card__list-item">PHP 8.3 / Drupal 10</li>
-          <li class="feature-card__list-item">Laravel Ecosystem</li>
-          <li class="feature-card__list-item">MySQL / PostgreSQL / Redis</li>
-        </ul>
-      </div>  
-      {% endfor %}
-  </div>
+	<div{{attributes.addClass(classes)}}>
+		<ul class="link-list link-list-{{paragraph.field_orientation.value}}">
+			{% for link_item in paragraph.field_link_item %}
+        {% if link_item.entity.field_target.value %}
+          {% set target = link_item.entity.field_target.value %}
+        {% else %}
+          {% set target = '' %}
+        {% endif %}
+        {% if target == '_blank' %}
+          {% set rel = 'noopener noreferrer' %}
+        {% else %}
+          {% set rel = '' %}
+        {% endif %}
+				<li class="link-list__item">
+					<div class="rounded_icon-wrapper rounded-icon-{{ paragraph.field_theme.value }}">
+						<div class="rounded_icon">
+							<span class="material-symbols-outlined">
+								{{ link_item.entity.field_icon_id.value }}
+							</span>
+						</div>
+					</div>
+					<a href="{{ link_item.entity.field_link[0].url|render ? link_item.entity.field_link[0].url|render : "#" }}" class="link-list__link" target="{{target}}" rel="{{rel}}">
+						{{ link_item.entity.field_link.title }}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
 {% endblock paragraph %}

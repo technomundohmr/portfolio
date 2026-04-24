@@ -224,3 +224,31 @@
 .layout--twocol {
     gap: 20px !important;
 }
+
+
+.rounded_icon-wrapper {
+  background-color: rgba(0, 229, 255, 0.1);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.rounded_icon span{
+  width: 24px;
+  height: 24px;
+}
+
+.rounded-icon-blue .rounded_icon span{
+  color: var(--neon-blue-primary);
+}
+
+.rounded-icon-green .rounded_icon span{
+  color: var(--neon-green-primary);
+}
+
+.rounded-icon-violet .rounded_icon span{
+  color: var(--neon-violet-primary);
+}

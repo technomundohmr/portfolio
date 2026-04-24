@@ -1,0 +1,19 @@
+.link-list {
+    list-style: none;
+    display: flex;
+}
+
+.link-list-vertical {
+    flex-direction: column;     
+    gap: 3rem;
+}
+
+.link-list-horizontal {
+    justify-content: space-around;     
+}
+
+.link-list__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

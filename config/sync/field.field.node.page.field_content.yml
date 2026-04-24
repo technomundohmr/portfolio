@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.feature_grid
     - paragraphs.paragraphs_type.full_horizontal_card
     - paragraphs.paragraphs_type.hero_banner
+    - paragraphs.paragraphs_type.link_list
     - paragraphs.paragraphs_type.section
     - paragraphs.paragraphs_type.section_header
     - paragraphs.paragraphs_type.spacer
@@ -34,6 +35,7 @@ settings:
       feature_grid: feature_grid
       section_header: section_header
       full_horizontal_card: full_horizontal_card
+      link_list: link_list
       webform: webform
     negate: 0
     target_bundles_drag_drop:
@@ -48,6 +50,12 @@ settings:
         enabled: true
       hero_banner:
         weight: 3
+        enabled: true
+      icon_with_link:
+        weight: 15
+        enabled: false
+      link_list:
+        weight: 16
         enabled: true
       section:
         weight: 2
